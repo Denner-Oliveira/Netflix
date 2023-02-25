@@ -1,0 +1,82 @@
+#vertical{
+    background: linear-gradient(to top,#111 10%,transparent 90%);
+    width: inherit;
+    height: inherit;
+}
+#horizontal{
+    background: linear-gradient(to right,#111 20%,transparent 70%);
+    width: inherit;
+    height: inherit;
+}
+.image{
+    width: 100%;
+    height: 100vh;
+}
+#info{
+    position: absolute;
+    top: 200px;
+    padding-left: 50px;
+    margin: 0px;
+}
+p{
+    margin: 5px;
+}
+#titulo{
+    font-size: 35pt;   
+}
+#pontos{
+    margin-left: 15px;
+    background-color: rgb(3, 248, 85);
+    color: black;
+    font-size: 15pt;
+    font-family: 'Roboto', sans-serif;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(0, 0, 0);
+}
+#duracao{
+    font-size: 15pt;
+    margin-top: 25px;
+}
+#sinopse{
+    font-size: 13pt;
+    width: 35%;
+    margin-top: 20px;
+}
+#buttons{
+    display: flex;
+    padding:10px;
+    width: 400px;
+}
+.botao{
+    min-width: 95px;
+    height: 35px;
+    font-size: 13pt;
+    font-weight: bold;
+    background-color: white;
+    color: #111;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-top: 15px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.botao:hover{
+    cursor: pointer;
+}
+#assistir span{
+    font-size: 15pt;
+}
+#addLista{
+    background-color: gray;
+    color:white;
+    justify-content: center;
+}
+#genero{
+    font-size: 12pt;
+    padding-top: 5px;
+}
