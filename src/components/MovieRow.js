@@ -5,12 +5,18 @@ import {BiLeftArrow,BiRightArrow} from 'react-icons/bi';
 export default function MovieRow({title,items}){
     
     const [margin,setMargin] = useState(0);
+    
+    document.addEventListener('mousedown',(e)=>{
+        if(e.detail > 1){
+            e.preventDefault()
+        }
+    })
 
     function cliqueEsquerda(){
         if(margin <= -(items.results.length-12)*170){
             return
         }else{
-            setMargin(margin - 170)
+            setMargin(margin - 340)
         }
     }
 
@@ -18,7 +24,7 @@ export default function MovieRow({title,items}){
         if(margin >=0){
             return
         }else{
-            setMargin(margin + 170)
+            setMargin(margin + 340)
         }
     }
     

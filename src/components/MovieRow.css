@@ -7,10 +7,11 @@
     position: relative;
     justify-content: center;
     margin-left: 30px;
+    margin-bottom: 30px;
 }
 .movie-row--list{
     height: 250px;
-    transition: all ease 100ms;
+    transition: all ease 300ms;
 }
 .movie-row--item{
     display: inline-block;
@@ -53,6 +54,4 @@
 .movie-row:hover #esquerda,.movie-row:hover #direita{
     opacity: 0.5;
 }
-#background{
-    background-color: #111;
-}
+

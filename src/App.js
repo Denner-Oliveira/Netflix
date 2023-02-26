@@ -4,7 +4,7 @@ import MovieRow from './components/MovieRow';
 import React,{useEffect,useState} from 'react';
 import FeaturedMovie from './components/FeaturedMovie'
 import Header from './components/Header';
-import Footer from './components/Footer';
+import {BsFacebook,BsInstagram,BsYoutube} from 'react-icons/bs';
 
 export default function App(){
 
@@ -41,7 +41,18 @@ export default function App(){
             <MovieRow key={key} title={item.title} items={item.items}/>
         ))}
         </section>
-        <Footer/>
+        <footer id='footer'>
+        <div id='sociais'>
+                <BsFacebook/>
+                <BsInstagram/>
+                <BsYoutube/>
+            </div>
+            <div id='creditos'>
+                <span>* React App feito por <a href="https://github.com/Denner-Oliveiras"> Denner Oliveira </a></span>
+                <span>* Direitos de imagem para <a href="netflix.com"> Netflix</a></span>
+                <span>* Dados pela API <a href="https://www.themoviedb.org/?language=pt-BR"> The Movie Database</a>, <a href="https://placeholder.com">Placeholder</a> e <a href="https://logodownload.org">Logo Download</a></span>
+            </div>
+        </footer>
     </div>
     )
 }

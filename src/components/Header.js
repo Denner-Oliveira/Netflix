@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import './Header.css'
+import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Header(){
     
@@ -16,7 +17,7 @@ export default function Header(){
     
     return(
         <header className={`header ${fundoPreto?'background':''}`} >
-            <a href="https://youtube.com"><img src="https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-5.png" alt="netflix" id='logo'/></a>
+            <a href="https://youtube.com"><img src="https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-5.png" alt="netflix" id='logoHeader'/></a>
             <div className="shows">
                 <a href="https://youtube.com"><span>Início</span></a>
                 <a href="https://youtube.com"><span>Filmes</span></a>
@@ -25,7 +26,10 @@ export default function Header(){
             </div>
             <nav id='nav'>
                 <input type="text" placeholder=" Títulos, gêneros"/>
-                <img src="https://via.placeholder.com/40" alt="" />
+                <section id="perfil">
+                    <img src="https://via.placeholder.com/45" alt="" />
+                    <IoIosArrowDown id='perfilTroca'/>
+                </section>
             </nav>
         </header>
     )
